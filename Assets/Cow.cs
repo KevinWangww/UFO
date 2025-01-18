@@ -31,7 +31,7 @@ public class Cow : MonoBehaviour
         // 2. 计算鼠标与物体 X 坐标之间的绝对距离
         float distanceX = worldPos.x - transform.position.x;
 
-        // 3. 若距离小于 Range，则升起 (targetT=1)，否则回到原位置 (targetT=0)
+        // 3. 若距离小于 Range，则升起 (targetT=1)，否则回到原位置 (targetT=0)1
         if((distanceX < 2 && distanceX >0) || (distanceX < 0 && distanceX > -2))
         {
             targetT = 1f;
