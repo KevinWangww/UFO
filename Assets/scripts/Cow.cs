@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Cow : MonoBehaviour
 {
-
-    [Header("动画曲线 (0~1 对应升/降的进度)")]
     public AnimationCurve moveCurve;
 
     // Creating original and end positions
