@@ -46,6 +46,7 @@ public class Cow : MonoBehaviour
 
         // 5. 用动画曲线来计算当前升/降的进度 (curveValue)
         transform.position = Vector2.Lerp(originalPos, endPos, moveCurve.Evaluate(t));
+        transform.Rotate(0f, 0f, 30 * t * Time.deltaTime);
 
     }
 }
